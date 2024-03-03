@@ -1,0 +1,259 @@
+
+/* -------------------------- VIDEO DE FONDO -------------------------- */
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+/* -------------------------- TEXTAREA CONFIG --------------------------*/
+textarea {
+    width: 99%;
+    max-height: 350px;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    border: none;
+    border-radius: .9375rem;
+}
+
+textarea,
+textarea::placeholder {
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    color: white;
+    padding: .125rem;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/*-------------------------- CONTAINR / MAIN -------------------------- */
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 60px 0 60px;
+}
+main {
+    min-height: 90vh;
+}
+/* -------------------------- PARTE IZQUIERDA-------------------------- */
+.left {
+    width: 40%;
+    margin: 30px 0 30px 0;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.left:hover {
+    box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.5);
+}
+
+.right:hover {
+    box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.5);
+}
+
+.box_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.span {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.span>span {
+    font-family: sans-serif;
+    color: white;
+}
+
+.advertencia {
+    color: white;
+    height: 25px;
+    width: 25px;
+}
+
+/* -------------------------- BOTONES -------------------------- */
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+/* -------------------------- COLOR AMARILLO -------------------------- */
+.azul {
+    background-color: rgb(255, 255, 176);
+    color: black;
+}
+
+.azul:hover {
+    background-color: rgb(255, 255, 176);
+    box-shadow: 0 0 20px rgba(255, 251, 123, 0.781);
+}
+
+.azul:active {
+    background-color: rgb(255, 255, 206);
+}
+
+/* -------------------------- COLOR VIOLETA -------------------------- */
+#botonCopiar {
+    background-color: rgb(176, 123, 255);
+}
+
+#botonCopiar :hover {
+    background-color: rgb(176, 123, 255);
+    box-shadow: 0 0 20px rgba(123, 77, 255, 0.781);
+}
+
+#botonCopiar :active {
+    background-color: rgb(206, 163, 255);
+}
+/* -------------------------- parte derecha -------------------------- */
+.right {
+    display: flex;
+    width: 40%;
+    margin: 30px 0 30px 0;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/* -------------------------- footer -------------------------- */
+.footer-links {
+    border: 1 solid black;
+    height: 5.8125rem;
+    background-color: #242c3477;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    height: 3.125rem;
+    width: 12.5rem;
+}
+
+.card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.card .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+
+.card svg {
+    transform: scale(1);
+}
+
+.card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+    background-color: #242c34;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+    background-color: #0a66c2;
+    animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
