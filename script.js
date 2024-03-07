@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (textoEncriptado && botonCopiar && input) {
         console.log("Todos los elementos se han encontrado.");
         // Ocultar elementos al cargar la página
-        textoEncriptado.style.display = 'none';
-        botonCopiar.style.display = 'none';
+        // textoEncriptado.style.display = 'none';
+        // botonCopiar.style.display = 'none';
 
         // Resto de tu script...
     } else {
@@ -27,8 +27,8 @@ var botonCopiar = document.getElementById('botonCopiar');
 var input = document.getElementById('txtextoOriginal');
 
 // Ocultar elementos al cargar la página
-textoEncriptado.style.display = 'none';
-botonCopiar.style.display = 'none';
+// textoEncriptado.style.display = 'none';
+// botonCopiar.style.display = 'none';
 
 // Agregar un evento de escucha al evento 'input' para validar el contenido ingresado
 input.addEventListener('input', function () {
@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (textoEncriptado && botonCopiar && input) {
         // Ocultar el textarea de texto encriptado y el botón de copiar al cargar la página
-        textoEncriptado.style.display = 'none';
-        botonCopiar.style.display = 'none';
+        // textoEncriptado.style.display = 'none';
+        // botonCopiar.style.display = 'none';
 
         // Agregar un evento de escucha al evento 'input' para validar el contenido ingresado
         input.addEventListener('input', function () {
